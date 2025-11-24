@@ -1,0 +1,23 @@
+.headPane{
+    background: url("../images/omena/omena_logo_card.png");
+    z-index: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    left:0px;
+    right:0px;
+    height: 50vh;  
+    position: relative;
+}
+
+.sidebar-wrap{
+    display: none;
+    background: #7FB6BA;
+    margin: 1em;
+    padding:1em;
+    z-index: 4;
+}
+
+.imgspacing{
+    margin:1vw;
+    padding:1vw;
+}

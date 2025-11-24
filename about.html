@@ -1,0 +1,100 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>About - Portfolio</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+    <!--Adding icon library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  </head>
+
+  <body onload="SetDefaultValue()">
+    <script>
+      function SetDefaultValue(){
+        var menu = document.getElementById("sidemenu");
+        menu.style.display = "none";
+      }
+      function showHideToggle() {
+        var x = document.getElementById("sidemenu");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        }  
+        else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+
+    <header class="partialPane">
+        <nav class="navbar pagesbar">
+          <ul class="navbar-nav d-inline-flex flex-row">
+              <li class="navbar-item p-2"><a class="nav-link projectsa" href="home.html"><span>Home</span></a></li>
+              <li class="navbar-item p-2"><a class="nav-link projectsa" href="home.html#project-title"><span>Projects</span></a></li>
+              <li class="navbar-item p-2"><a class="nav-link resumea" href="resume.html"><span>Resume</span></a></li>
+              <li class="navbar-item p-2"><a class="nav-link abouta" href="about.html"><span>About</span></img>
+              </a></li>
+          </ul>
+        </nav>
+
+        <div class="sidebar-wrap">
+          <a onclick="showHideToggle()"><i class="fa fa-bars fa-2x" alt="hamburger menu"></i></a>
+          <div class="sidebar" id="sidemenu">
+            <br>
+            <a class="nav-link projectsmenu" href="home.html"><span>Home</span></a><br>
+            <a class="nav-link scrolla" href="home.html#project-title"><span>Projects</span></a><br>
+            <a class="nav-link resumea" href="resume.html"><span>Resume</span></a><br>
+            <a class="nav-link abouta" href="about.html"><span>About</span></a>
+          </div>
+        </div>
+    </header>
+
+      <div class="row">
+          <div class="col">
+            <div class="card about-pol polaroid">
+                <img class="card-img-top pol-img pol-img-about" src="./images/self.jpg" alt="profile image" style="margin:auto;">
+                <div class="card-body">
+                  <h4 class="card-title display-5">THIS IS ME </h5>
+                  <h5 class="card-subtitle month-year">10/2000 - now</h6>
+                  <div class="button-row">
+                    <div><a href="https://github.com/mlh22"><i class="fa fa-github fa-2x socialicons" alt="github home page"></i></a></div>
+                    <div><a href="https://www.linkedin.com/in/maliha-islam-b71a6b146/"><i class="fa fa-linkedin fa-2x socialicons" alt="linkedin home page"></i></a></div>
+                    <div><a href="mailto:maliha1010@gmail.edu"><i class="fa fa-envelope fa-2x socialicons" alt="gmail home page"></i></a></div>
+                    <div><a href="https://www.instagram.com/mal_lihai/"><i class="fa fa-instagram fa-2x socialicons" alt="instagram home page"></i></a></div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="about-me">
+              <h2 class="display-2 about-page-head">About</h2>
+              <p>
+                Hello! My name is Maliha Islam and I am a software engineer from Queens, New York. I am interested in 
+                software development and UI/UX design, particularly in the arts realm. Nearly all of my time is spent 
+                leaning over a laptop, but I enjoy creating, designing, and producing even on my own free time. I am passionate 
+                about the arts and about human rights, and will often spend all my time talking/ranting about either of the 
+                two. 
+              </p>
+            </div>
+          </div>
+      </div>
+
+      <footer>
+        <p>
+        <br>
+        Designed by Maliha Islam
+        <br>
+        Home page, about, music, and resume background images and self-photo photographed by Maliha Islam
+        <br>
+        Contents of pages written by Maliha Islam
+        <br>
+        Header images and polaroid thumbnails edited by Maliha Islam on Canva
+        <br>
+        </p>
+      </footer>
+  </body>
+
+</html>

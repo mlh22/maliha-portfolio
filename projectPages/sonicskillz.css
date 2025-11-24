@@ -1,0 +1,28 @@
+.headPane{
+    background: url("../images/sonicskillz/pixel_headers.png");
+    z-index: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    left:0px;
+    right:0px;
+    height: 50vh;  
+    position: relative;
+}
+
+.home-img{
+    width: 50%;
+    margin: auto;
+    display: block;
+    align-self: center;
+    justify-content: center;
+}
+
+.image-display{
+    margin: 2vw;
+    padding: 2vw;
+    background-color: #C8D9BE;
+}
+
+.light-green-background{
+    background-color: #C8D9BE;
+}

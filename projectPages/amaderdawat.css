@@ -1,0 +1,107 @@
+.headPane{
+    background: url("../images/amaderdawat/lotus.png");
+    z-index: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    left:0px;
+    right:0px;
+    height: 50vh;  
+    position: relative;
+}
+
+.container-item-darker{
+    width: 70vw;
+    height: 10rem;
+    background-color: rgb(127, 182, 186, 0.9);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container-item-darker h1{
+    z-index: 2;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.background-box{
+    margin: 2vw;
+    background-color: #b7f3d6;
+    padding: 2vw;
+}
+
+.mint-background{
+    background-color: #b7f3d6;
+}
+
+.pink-background-box{
+    margin: 2vw;
+    padding: 2vw;
+    background-color: #fddedd;
+}
+
+.home-img{
+    width: 50%;
+    margin: auto;
+    display: block;
+    align-self: center;
+    justify-content: center;
+}
+
+ .section-div h4{
+     text-align: center;
+ }
+
+ .teaser-box{
+    justify-content: center;
+    width: 75%;
+    margin: auto;
+ }
+
+ .video-reel{
+    display: block;
+    margin: auto;
+ }
+
+ @media (max-width: 830px){
+    .container-item-darker h1{
+        font-size: 4rem!important;
+    }
+}
+
+@media (max-width: 675px){
+    .container-item-darker h1{
+        font-size: 3rem!important;
+    }
+}
+
+@media (max-width:576px){
+    .container-item-darker h1{
+        font-size: 3rem!important;
+    }
+}
+
+ @media (max-width:510px){
+    .container-item-darker h1{
+        font-size: 2rem!important;
+    }
+ }
+
+ 
+
+ @media only screen and (max-width:350px){
+    .container-item-darker h1{
+        font-size: 2rem!important;
+    }
+}

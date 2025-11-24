@@ -1,0 +1,52 @@
+.headPane{
+    background: url("../images/cactiab/cacti_background.png");
+    background-attachment: fixed;
+    background-size: cover;
+    position:relative;
+    left:0px;
+    right:0px;
+    z-index: 0;
+    filter: saturate(120%) contrast(70%) brightness(120%);
+    height: 50vh;  
+}
+
+.pic-box{
+    margin: 2vw;
+}
+
+.pastel-green-background{
+    background-color: #ecedd5;
+}
+
+.log-box-img{
+    margin: 2vw;
+    padding: 2vw;
+    padding-left: 5vw;
+}
+
+.log-box-last{
+    margin: 2vw;
+    background-color: #ecedd5;
+    padding: 2vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: center;
+}
+
+.infographic{
+    width: 100%;
+}
+
+.infographic-img{
+    display: inline-block;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.infographic-img img{
+    display: block;
+    width: 50vw;
+    height: auto;
+    align-content: center;
+}

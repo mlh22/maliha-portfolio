@@ -1,0 +1,67 @@
+.headPane{
+    background: url("../images/rrrecords/records_background.png");
+    z-index: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    left:0px;
+    right:0px;
+    height: 50vh;  
+    position: relative;
+}
+
+.dusty-pink-background{
+    background-color: #ebd6d5;
+}
+
+
+/* textbox inside organization */
+.org-box{
+    margin:2vw;
+    padding:2vw;
+    background-color: #ebd6d5;
+}
+
+.org-box p{
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+
+.screenshot img{
+    display: block;
+    width: 80%;
+    height: auto;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.links{
+    text-align: center;
+}
+
+
+@media (max-width: 1170px){
+    .container-item h1{
+        font-size: 4rem!important;
+    }
+}
+
+@media (max-width: 940px){
+    .container-item h1{
+        font-size: 3rem!important;
+    }
+}
+
+@media (max-width: 710px){
+    .container-item h1{
+        font-size: 2rem!important;
+    }
+}
+
+ @media (max-width:470px){
+    .container-item h1{
+        font-size: 1.5rem!important;
+    }
+ }
+

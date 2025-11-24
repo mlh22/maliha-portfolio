@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Resume - Portfolio</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+
+  <body onload="SetDefaultValue()">
+    <script>
+      function SetDefaultValue(){
+        var menu = document.getElementById("sidemenu");
+        menu.style.display = "none";
+      }
+      function showHideToggle() {
+        var x = document.getElementById("sidemenu");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        }  
+        else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+    <header class="partialPane">
+          <nav class="navbar pagesbar">
+            <ul class="navbar-nav d-inline-flex flex-row">
+                <li class="navbar-item p-2"><a class="nav-link projectsa" href="home.html"><span>Home</span></a></li>
+                <li class="navbar-item p-2"><a class="nav-link projectsa" href="home.html#project-title"><span>Projects</span></a></li>
+                <li class="navbar-item p-2"><a class="nav-link resumea" href="resume.html"><span>Resume</span></a></li>
+                <li class="navbar-item p-2"><a class="nav-link abouta" href="about.html"><span>About</span></a></li>
+            </ul>
+          </nav>
+
+          <div class="sidebar-wrap">
+            <a onclick="showHideToggle()"><i class="fa fa-bars fa-2x" alt="hamburger menu"></i></a>
+            <div class="sidebar" id="sidemenu">
+              <br>
+              <a class="nav-link projectsmenu" href="home.html"><span>Home</span></a><br>
+              <a class="nav-link scrolla" href="home.html#project-title"><span>Projects</span></a><br>
+              <a class="nav-link resumea" href="resume.html"><span>Resume</span></a><br>
+              <a class="nav-link abouta" href="about.html"><span>About</span></a>
+            </div>
+          </div>
+      </header>
+
+      <br>
+      <embed src="uiux_resume maliha_islam.pdf" type="application/pdf" class="pdf">
+
+      <footer>
+        <p>
+        <br>
+        Designed by Maliha Islam
+        <br>
+        Home page, about, music, and resume background images and self-photo photographed by Maliha Islam
+        <br>
+        Contents of pages written by Maliha Islam
+        <br>
+        Header images and polaroid thumbnails edited by Maliha Islam on Canva
+        <br>
+        </p>
+      </footer>
+  </body>
+
+</html>

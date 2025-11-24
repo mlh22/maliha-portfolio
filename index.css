@@ -1,0 +1,474 @@
+/* quattrocento-regular - latin */
+@font-face {
+    font-family: 'Quattrocento';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/quattrocento-v12-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./fonts/quattrocento-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/quattrocento-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/quattrocento-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/quattrocento-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/quattrocento-v12-latin-regular.svg#Quattrocento') format('svg'); /* Legacy iOS */
+}
+
+/* quattrocento-sans-regular - latin */
+@font-face {
+    font-family: 'Quattrocento Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/quattrocento-sans-v13-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./fonts/quattrocento-sans-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/quattrocento-sans-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/quattrocento-sans-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/quattrocento-sans-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/quattrocento-sans-v13-latin-regular.svg#QuattrocentoSans') format('svg'); /* Legacy iOS */
+  }
+
+/* caveat-regular - latin */
+@font-face {
+    font-family: 'Caveat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/caveat-v9-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./fonts/caveat-v9-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/caveat-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/caveat-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/caveat-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/caveat-v9-latin-regular.svg#Caveat') format('svg'); /* Legacy iOS */
+  }
+
+
+.topPane{
+    background: url("./images/filtered-bg.png") center fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.partialPane{
+    background: url("./images/filtered-bg.png") center fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 40vh;
+    z-index: -1;
+}
+
+/* citation for frosted image creation: 
+    https://webdesign.tutsplus.com/tutorials/how-to-create-a-frosted-glass-effect-in-css--cms-32535 */
+
+.frosted{
+    width: 70vw;
+    height: 20rem;
+    background-color: rgba(150, 150, 150, 0.5);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(20%);
+}
+
+.front-text{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.frosted h1{
+    z-index: 2;
+    color: #3d1d58;
+    font-weight: 600;
+    padding: 0;
+    font-family: 'Quattrocento';
+    font-size: 7rem;
+    background-color: rgb(212, 175, 229, 0.65);
+}
+
+.frosted h2{
+    z-index: 2;
+    color: #3d1d58;
+    font-weight: 600;
+    font-family: 'Quattrocento';
+    font-size: 2rem;
+    background-color: rgb(212, 175, 229, 0.65);
+}
+
+
+.pagesbar {
+    display: inline-flex;
+    background: #7FB6BA;
+    margin: 1em;
+    padding-right:1em;
+    margin-right:0em;
+}
+
+
+.sidebar-wrap{
+    display: none;
+    background: #7FB6BA;
+    margin: 1em;
+    padding:1em;
+    z-index: 4;
+}
+
+.sidebar-wrap i{
+    color: #3d3c3c;
+}
+
+
+.projectsa{
+    color: #3d3c3c;
+    font-weight: 500;
+    margin-left: 0.5em;
+    margin-right: 1em;
+}
+
+.projectsmenu{
+    color: #3d3c3c;
+    font-weight: 500;
+    margin-right: 1em;
+}
+
+.scrolla{
+    color: #3d3c3c;
+    font-weight: 500;
+    margin-right: 1em;
+}
+
+.musica{
+    color: #3d3c3c;
+    font-weight: 500;
+    margin-right: 1em;
+}
+
+.resumea{
+    color: #3d3c3c;
+    font-weight: 500;
+    margin-right: 1em;
+}
+
+.abouta{
+    color: #3d3c3c;
+    font-weight: 500;
+}
+
+/* citation for arrow: https://www.w3schools.com/howto/howto_css_arrows.asp */
+.scroll-arrow-steady {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: 50%;
+    top: 88%;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    animation-name: scrollbye;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+
+.scroll-arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: 50%;
+    top: 88%;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    animation-name: scrollindicate;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes scrollbye{
+    from{opacity: 100%;}
+    to {opacity: 30%;}
+}
+
+@keyframes scrollindicate{
+    from{top:88%;}
+    to {top:90%;}
+}
+
+
+.project-page-head{
+    font-family: 'Quattrocento';
+    text-align: center;
+    padding: 1em;
+}
+
+.about-page-head{
+    font-family: 'Quattrocento';
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+}
+
+.card-rows{
+    justify-content: center;
+    align-content: center;
+}
+
+.about-pol{
+    margin: 3em;
+    width: 30vw;
+    height: 70vh;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #E9E6EB !important;
+    flex-wrap: wrap;
+}
+
+.about-pol h4{
+    font-family: 'Caveat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.about-me{
+    padding: 1em;
+}
+
+.socialicons{
+    color: #669194;
+    padding: 10%;
+    margin: 10px;
+}
+
+.socialicons:hover{
+    color: #F3BBAE;
+}
+
+.button-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.polaroid{
+    margin: 3em;
+    width: 30vw;
+    height: 80vh;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #E9E6EB !important;
+    flex-wrap: wrap;
+}
+
+.polaroid h4{
+    font-size: 2em;
+}
+
+
+.month-year{
+    font-family: 'Caveat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.pol-img{
+    padding: 1em;
+    width: calc(30vw-2em);
+    height: 45vh;
+}
+
+.pol-img-about{
+    filter: grayscale(80%) saturate(80%) opacity(80%);
+
+}
+
+.view-btn{
+    float: right;
+    background-color: #F3BBAE !important;
+}
+
+.view-btn:hover{
+    filter: brightness(90%);
+}
+
+footer{
+    font-size: small;
+    margin-top: 10vh;
+    margin-bottom: 10px;
+    padding: 20px 20px 20px 20px;
+    background-color: #7E6B8F;
+    color: white;
+    text-align: center;
+}
+
+.pdf{
+    display: block;
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+}
+
+
+
+
+
+
+
+/* all media queries */
+@media only screen and (max-width:1050px){
+    .frosted h1{
+        font-size: 5rem!important;
+    }
+    .frosted h2{
+        font-size: 1.5rem!important;
+    }
+}
+@media only screen and (max-width:992px){
+    .polaroid{
+        width: 38vw!important;
+        height: 85vh;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        background-color: #E9E6EB !important;
+        flex-wrap: wrap;
+    }
+    .about-pol{
+        width: 38vw!important;
+        height: 85vh;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        background-color: #E9E6EB !important;
+        flex-wrap: wrap;
+    }
+    .card-rows{
+        justify-content: center;
+        align-content: center;
+    }
+    .about-pol h4{
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width:720px){
+    .frosted h1{
+        font-size: 5rem!important;
+    }
+    .frosted h2{
+        font-size: 1.5rem!important;
+    }
+    .polaroid{
+        width: 40vw!important;
+        height: 75vh;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        background-color: #E9E6EB !important;
+        flex-wrap: wrap;
+    }
+    .about-pol{
+        width: 40vw!important;
+        height: 75vh;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        background-color: #E9E6EB !important;
+        flex-wrap: wrap;
+    }
+    .pol-img{
+        height: 40vh;
+    }
+    .card-rows{
+        justify-content: center;
+        align-content: center;
+    }
+    .polaroid h4{
+        font-size: 1.3em;
+    }
+    .about-pol h4{
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width:660px){
+    .frosted h1{
+        font-size: 4.3rem!important;
+    }
+}
+
+
+@media (max-width:576px){
+    .frosted h1{
+        font-size: 3.5rem!important;
+    }
+    .frosted h2{
+        font-size: 1.3rem!important;
+    }
+    .sidebar-wrap{
+        display: inline-block;
+        position: inherit;
+    }
+    .polaroid{
+        margin-left: auto;
+        width: 60vw!important;
+        height: 70vh;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        background-color: #E9E6EB !important;
+        flex-wrap: wrap;
+    }
+    .about-pol{
+        margin-left: auto;
+        width: 60vw!important;
+        height: 75vh;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        background-color: #E9E6EB !important;
+        flex-wrap: wrap;
+    }
+    .card-rows{
+        justify-content: center;
+        align-content: center;
+    }
+    .pagesbar{
+        display:none;
+    }
+    .navbar{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:350px){
+    .polaroid{
+        margin-left: auto;
+        width: 65vw!important;
+        height: 60vh;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        background-color: #E9E6EB !important;
+        flex-wrap: wrap;
+    }
+    .about-pol{
+        margin-left: auto;
+        width: 65vw!important;
+        height: 65vh;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        background-color: #E9E6EB !important;
+        flex-wrap: wrap;
+    }
+    .polaroid h4{
+        font-size: 1em;
+    }
+    .about-pol h4{
+        font-size: 1em;
+    }
+    .pol-img{
+        height: 30vh;
+    }
+    p{
+        font-size: 0.7em;
+    }
+    .polaroid span{
+        font-size: 0.6em;
+    }
+    .pagesbar {
+        float: left;
+        background: #7FB6BA;
+        margin: 0.5em;
+        padding:0.5em;
+    }
+}

@@ -1,0 +1,119 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>JPMC</title>
+    <link rel="stylesheet" href="../bootstrap.css">    
+    <link rel="stylesheet" href="projectstylesheet.css">
+    <link rel="stylesheet" href="jpmc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+
+  <body onload="SetDefaultValue()">
+    <script>
+        function SetDefaultValue(){
+          var menu = document.getElementById("sidemenu");
+          menu.style.display = "none";
+        }
+        function showHideToggle() {
+          var x = document.getElementById("sidemenu");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          }  
+          else {
+            x.style.display = "none";
+          }
+        }
+    </script>
+
+    <header class="headPane">
+        <nav class="navbar pagesbar">
+            <ul class="navbar-nav d-inline-flex flex-row">
+                <li class="navbar-item p-2"><a class="nav-link projectsa" href="../home.html"><span>Home</span></a></li>
+                <li class="navbar-item p-2"><a class="nav-link projectsa" href="../home.html#omena"><span>Projects</span></a></li>
+                <li class="navbar-item p-2"><a class="nav-link resumea" href="../resume.html"><span>Resume</span></a></li>
+                <li class="navbar-item p-2"><a class="nav-link abouta" href="../about.html"><span>About</span></a></li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-wrap">
+            <a onclick="showHideToggle()"><i class="fa fa-bars fa-2x" alt="hamburger menu"></i></a>
+            <div class="sidebar" id="sidemenu">
+              <br>
+              <a class="nav-link projectsmenu" href="../home.html"><span>Home</span></a><br>
+              <a class="nav-link scrolla" href="../home.html#omena"><span>Projects</span></a><br>
+              <a class="nav-link resumea" href="../resume.html"><span>Resume</span></a><br>
+              <a class="nav-link abouta" href="../about.html"><span>About</span></a>
+            </div>
+        </div>
+
+        <div class="container-item">
+            <div class="title-text">
+                <h1 >JPMorgan Chase & Co</h1>
+            </div>
+        </div>
+    </header>
+    
+    <div class="section-div">
+      <h2 class="display-3">My Roles</h2>
+        <div class="content-text-box">
+            <h3 class="display-5">Associate Software Engineer</h3>
+            <p>
+                I was a full time full stack software engineer working within the Commercial and Investment Banking (CIB) line of 
+                business. In this role, I maintained an internal application used for record storage and audit history. This involved 
+                significant programming work in Java Spring Boot and ReactJS. I wrote and tested APIs, prototyped and developed front-end 
+                UI changes, and communicated to clients about new features and business requirement. This work is confidential and cannot 
+                be displayed on my own portfolio; however, I am grateful for the experience my almost-three years in financial technology 
+                provided me. Through my role I gained significant experience prototyping in Figma and coding these prototypes using various 
+                Javascript libraries. I learned to become more accessibility-minded in my designs as well, accounting for things such as 
+                visual contrast, light and dark modes, keyboard navigation for screen elements, etc.
+            </p>
+            <br>
+
+            <h3 class="display-5">Activism Work</h3>
+            <p>
+                Though I was on JPMC's payroll primarily as an associate engineer on the record storage project, I have had many more 
+                contributions to (and through) the company. Through JPMorgan's Force for Good initiative, I was able to work directly 
+                with the Ali Forney Center, a nonprofit organization based in NYC providing shelter and resources for unhoused queer 
+                youth, to get them a CRM platform to facilitate their business operations. In addition, I was lucky to have 
+                a manager who was a significant player in the firm's DEI initiatives, particularly through a business resource group called 
+                Pride at Work. Through this group, I had the opportunity to speak in panels about my lived experience as a queer nonbinary 
+                person working in a corporate environment. In addition, I spearheaded an initiative within my particular line of business, 
+                leading a group of like-minded individuals to develop programming and initiatives towards promoting DEI practices within JPMC.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="section-div">
+        <h2 class="display-3">Reflections</h2>
+        <div class="content-text-box">
+            <p>
+                This was my first job opportunity post my undergraduate education, and I am forever grateful to the connections I made 
+                and the ways in which I have learned about myself as a laborer and as a person. It was through this role that I recognized 
+                I have many skills to offer, and that my heart lies in more creative roles. I found myself thriving in assignments involving 
+                a heavier focus on UI/UX, and felt incredibly fulfilled through my volunteering opportunities on the side as well.
+            </p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <footer>
+        <p>
+        <br>
+        Designed by Maliha Islam
+        <br>
+        Home page, about, music, and resume background images and self-photo photographed by Maliha Islam
+        <br>
+        Contents of pages written by Maliha Islam
+        <br>
+        Header images and polaroid thumbnails edited by Maliha Islam on Canva
+        <br>
+        </p>
+    </footer>
+
+
+  </body>
+</html>
