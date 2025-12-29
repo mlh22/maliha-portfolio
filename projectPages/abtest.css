@@ -1,14 +1,4 @@
-.headPane{
-    background: url("../images/cactiab/cacti_background.png");
-    background-attachment: fixed;
-    background-size: cover;
-    position:relative;
-    left:0px;
-    right:0px;
-    z-index: 0;
-    filter: saturate(120%) contrast(70%) brightness(120%);
-    height: 50vh;  
-}
+
 
 .pic-box{
     margin: 2vw;

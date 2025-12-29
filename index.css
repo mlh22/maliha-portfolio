@@ -40,6 +40,19 @@
          url('./fonts/caveat-v9-latin-regular.svg#Caveat') format('svg'); /* Legacy iOS */
   }
 
+  @font-face {
+    font-family: "Nothing You Could Do";
+    font-weight: 400;
+    font-style: normal;
+    src: url('./fonts/NothingYouCouldDo-Regular.eot');
+    src: local(''),
+        url('./fonts/NothingYouCouldDo-Regular.ttf') format('truetype'),
+        url('./fonts/NothingYouCouldDo-Regular.woff') format('woff');
+
+  }
+
+
+
 
 .topPane{
     background: url("./images/filtered-bg.png") center fixed;
@@ -92,9 +105,10 @@
     z-index: 2;
     color: #3d1d58;
     font-weight: 600;
-    font-family: 'Quattrocento';
+    font-family: 'Nothing You Could Do';
     font-size: 2rem;
     background-color: rgb(212, 175, 229, 0.65);
+    margin-left: 2px;
 }
 
 
@@ -104,6 +118,7 @@
     margin: 1em;
     padding-right:1em;
     margin-right:0em;
+    font-family: 'Quattrocento';
 }
 
 
@@ -205,12 +220,13 @@
     font-family: 'Quattrocento';
     text-align: center;
     padding: 1em;
+    padding-bottom: 0;
 }
 
 .about-page-head{
-    font-family: 'Quattrocento';
+    font-family: 'Nothing You Could Do';
     padding-top: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
 
 }
 
@@ -219,14 +235,6 @@
     align-content: center;
 }
 
-.about-pol{
-    margin: 3em;
-    width: 30vw;
-    height: 70vh;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    background-color: #E9E6EB !important;
-    flex-wrap: wrap;
-}
 
 .about-pol h4{
     font-family: 'Caveat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -236,6 +244,7 @@
 
 .about-me{
     padding: 1em;
+    font-family: 'Quattrocento', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .socialicons{
@@ -245,7 +254,7 @@
 }
 
 .socialicons:hover{
-    color: #F3BBAE;
+    color: rgb(212, 175, 229, 0.65);
 }
 
 .button-row{
@@ -257,21 +266,43 @@
 }
 
 .polaroid{
-    margin: 3em;
-    width: 30vw;
-    height: 80vh;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 25vw;
+    height: 65vh;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     background-color: #E9E6EB !important;
     flex-wrap: wrap;
 }
 
-.polaroid h4{
-    font-size: 2em;
+.abt-polaroid{
+    margin:3em;
+    margin-left: 5em;
+    width: 25vw;
+    height: 70vh;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #E9E6EB !important;
+    flex-wrap: wrap;
+    font-family: 'Nothing You Could Do';
 }
 
+.btn:hover{
+    background: rgb(212, 175, 229, 0.65);
+    box-shadow: 1px;
+}
+
+.polaroid h4{
+    font-size: 2em;
+    font-family: 'Nothing You Could Do', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.abt-polaroid h4{
+    font-size: 2em;
+    font-family: 'Nothing You Could Do', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 .month-year{
-    font-family: 'Caveat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Nothing You Could Do', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
@@ -287,8 +318,21 @@
 }
 
 .view-btn{
-    float: right;
-    background-color: #F3BBAE !important;
+    display: flex;
+    justify-content: center;
+    background-color: #7FB6BA !important;
+}
+
+.card-body{
+    position: relative;
+    text-align: left;
+}
+
+.button-wrapper{
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .view-btn:hover{
@@ -330,14 +374,12 @@ footer{
 @media only screen and (max-width:992px){
     .polaroid{
         width: 38vw!important;
-        height: 85vh;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         background-color: #E9E6EB !important;
         flex-wrap: wrap;
     }
-    .about-pol{
+    .abt-polaroid{
         width: 38vw!important;
-        height: 85vh;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         background-color: #E9E6EB !important;
         flex-wrap: wrap;
@@ -360,14 +402,12 @@ footer{
     }
     .polaroid{
         width: 40vw!important;
-        height: 75vh;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         background-color: #E9E6EB !important;
         flex-wrap: wrap;
     }
-    .about-pol{
+    .abt-polaroid{
         width: 40vw!important;
-        height: 75vh;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         background-color: #E9E6EB !important;
         flex-wrap: wrap;
@@ -379,12 +419,7 @@ footer{
         justify-content: center;
         align-content: center;
     }
-    .polaroid h4{
-        font-size: 1.3em;
-    }
-    .about-pol h4{
-        font-size: 1.3em;
-    }
+
 }
 
 @media (max-width:660px){
@@ -413,10 +448,10 @@ footer{
         background-color: #E9E6EB !important;
         flex-wrap: wrap;
     }
-    .about-pol{
+    .abt-polaroid{
         margin-left: auto;
         width: 60vw!important;
-        height: 75vh;
+        height: 70vh;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         background-color: #E9E6EB !important;
         flex-wrap: wrap;
@@ -442,10 +477,10 @@ footer{
         background-color: #E9E6EB !important;
         flex-wrap: wrap;
     }
-    .about-pol{
+    .abt-polaroid{
         margin-left: auto;
         width: 65vw!important;
-        height: 65vh;
+        height: 60vh;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         background-color: #E9E6EB !important;
         flex-wrap: wrap;
@@ -453,7 +488,7 @@ footer{
     .polaroid h4{
         font-size: 1em;
     }
-    .about-pol h4{
+    .abt-polaroid h4{
         font-size: 1em;
     }
     .pol-img{

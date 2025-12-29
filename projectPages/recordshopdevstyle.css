@@ -1,14 +1,3 @@
-.headPane{
-    background: url("../images/rrrecords/records_background.png");
-    z-index: 0;
-    background-attachment: fixed;
-    background-size: cover;
-    left:0px;
-    right:0px;
-    height: 50vh;  
-    position: relative;
-}
-
 .dusty-pink-background{
     background-color: #ebd6d5;
 }

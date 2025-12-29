@@ -1,13 +1,4 @@
-.headPane{
-    background: url("../images/amaderdawat/lotus.png");
-    z-index: 0;
-    background-attachment: fixed;
-    background-size: cover;
-    left:0px;
-    right:0px;
-    height: 50vh;  
-    position: relative;
-}
+
 
 .container-item-darker{
     width: 70vw;
@@ -73,6 +64,11 @@
     display: block;
     margin: auto;
  }
+ .imgspacing{
+    display: flex;
+    margin:1vw;
+    padding:1vw;
+}
 
  @media (max-width: 830px){
     .container-item-darker h1{

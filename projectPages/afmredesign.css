@@ -1,14 +1,4 @@
 
-.headPane{
-    background: url("../images/afm47/city_map.png");
-    z-index: 0;
-    background-attachment: fixed;
-    background-size: cover;
-    left:0px;
-    right:0px;
-    height: 50vh;  
-    position: relative;
-}
 
 .lofi img{
     display: block;
@@ -26,35 +16,6 @@
     align-content: center;
 }
 
-.designcriteria{
-    padding-left: 5vw;
-    padding-right: 5vw;
-}
-
-.usability{
-    font-size: small;
-    overflow:scroll;
-}
-
-.learnability{
-    font-size: small;
-    overflow:scroll;
-}
-
-.memorability{
-    font-size: small;
-    overflow:scroll;
-}
-
-.accessibility{
-    font-size: small;
-    overflow:scroll;
-}
-
-.judgement{
-    font-size: small;
-    overflow:scroll;
-}
 
 .designcriteria h4{
     text-align: center;
@@ -63,6 +24,9 @@
 .lofi{
     padding: 5vw;
     padding-bottom: 2vw;
+}
+.lofi-img{
+    padding: 2vw;
 }
 .lofi p{
     background-color: blanchedalmond;
