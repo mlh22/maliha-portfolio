@@ -25,10 +25,6 @@
     margin: auto;
 }
 
-.links{
-    text-align: center;
-}
-
 
 @media (max-width: 1170px){
     .container-item h1{

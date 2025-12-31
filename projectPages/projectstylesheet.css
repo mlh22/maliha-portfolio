@@ -47,6 +47,7 @@
     font-style: normal;
     src: url('../fonts/NothingYouCouldDo-Regular.eot');
     src: local(''),
+        url('../fonts/NothingYouCouldDo-Regular.eot?#iefix') format('embedded-opentype'),
         url('../fonts/NothingYouCouldDo-Regular.ttf') format('truetype'),
         url('../fonts/NothingYouCouldDo-Regular.woff') format('woff');
 
@@ -198,7 +199,11 @@ body{
     padding-left: 5vw;
     padding-right: 5vw;
     padding-top: 5vw; 
-    font-family: 'Quattrocento Sans';
+    font-family: 'Quattrocento';
+}
+
+.section-div h2{
+    font-family:'Nothing You Could Do'
 }
 
 .content-text-box{
@@ -213,6 +218,11 @@ body{
     padding: 20px 20px 20px 20px;
     background-color: #7E6B8F;
     color: white;
+    text-align: center;
+}
+
+.links{
+    font-family: 'Quattrocento';
     text-align: center;
 }
 

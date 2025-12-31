@@ -46,6 +46,7 @@
     font-style: normal;
     src: url('./fonts/NothingYouCouldDo-Regular.eot');
     src: local(''),
+        url('../fonts/NothingYouCouldDo-Regular.eot?#iefix') format('embedded-opentype'),
         url('./fonts/NothingYouCouldDo-Regular.ttf') format('truetype'),
         url('./fonts/NothingYouCouldDo-Regular.woff') format('woff');
 

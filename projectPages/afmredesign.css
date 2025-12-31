@@ -1,4 +1,28 @@
+@font-face {
+    font-family: "Nothing You Could Do";
+    font-weight: 400;
+    font-style: normal;
+    src: url('../fonts/NothingYouCouldDo-Regular.eot');
+    src: local(''),
+        url('../fonts/NothingYouCouldDo-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NothingYouCouldDo-Regular.ttf') format('truetype'),
+        url('../fonts/NothingYouCouldDo-Regular.woff') format('woff');
 
+}
+
+  /* encode sans - latin */
+@font-face {
+    font-family: 'Encode Sans Expanded';
+    font-style: normal;
+    font-weight: 400;
+    ssrc: url('../fonts/encode-sans-expanded-v5-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/encode-sans-expanded-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/encode-sans-expanded-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/encode-sans-expanded-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/encode-sans-expanded-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/quattrocento-sans-v13-latin-regular.svg#QuattrocentoSans') format('svg'); /* Legacy iOS */
+}
 
 .lofi img{
     display: block;
@@ -21,10 +45,6 @@
     text-align: center;
 }
 
-.lofi{
-    padding: 5vw;
-    padding-bottom: 2vw;
-}
 .lofi-img{
     padding: 2vw;
 }
@@ -33,10 +53,6 @@
     padding: 2em;
 }
 
-.hifi{
-    padding: 5vw;
-    padding-bottom: 2vw;
-}
 
 .hifi p{
     background-color: blanchedalmond;
@@ -46,6 +62,10 @@
 .styleguide{
     padding: 5vw;
     padding-bottom: 2vw;
+}
+
+.styleguide h2{
+    font-family:'Nothing You Could Do';
 }
 
 .styleguide h5{
