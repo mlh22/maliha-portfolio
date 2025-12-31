@@ -15,3 +15,7 @@
 .light-green-background{
     background-color: #C8D9BE;
 }
+
+.img-border{
+    border: 3px ridge #C8D9BE;
+}

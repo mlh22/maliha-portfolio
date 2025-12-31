@@ -40,3 +40,7 @@
     height: auto;
     align-content: center;
 }
+
+.img-border{
+    border: 3px ridge #ecedd5;
+}
