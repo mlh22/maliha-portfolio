@@ -1,0 +1,131 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Omena Madagascar</title>
+    <link rel="stylesheet" href="../bootstrap.css">    
+    <link rel="stylesheet" href="projectstylesheet.css">
+    <link rel="stylesheet" href="developforgood.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+
+  <body onload="SetDefaultValue()">
+    <script>
+        function SetDefaultValue(){
+          var menu = document.getElementById("sidemenu");
+          menu.style.display = "none";
+        }
+        function showHideToggle() {
+          var x = document.getElementById("sidemenu");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          }  
+          else {
+            x.style.display = "none";
+          }
+        }
+    </script>
+
+    <header class="headPane">
+        <nav class="navbar pagesbar">
+            <ul class="navbar-nav d-inline-flex flex-row">
+                <li class="navbar-item p-2"><a class="nav-link projectsa" href="../index.html"><span>Home</span></a></li>
+                <li class="navbar-item p-2"><a class="nav-link projectsa" href="../index.html#omena"><span>Projects</span></a></li>
+                <li class="navbar-item p-2"><a class="nav-link resumea" href="../resume.html"><span>Resume</span></a></li>
+                <li class="navbar-item p-2"><a class="nav-link abouta" href="../about.html"><span>About</span></a></li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-wrap">
+            <a onclick="showHideToggle()"><i class="fa fa-bars fa-2x" alt="hamburger menu"></i></a>
+            <div class="sidebar" id="sidemenu">
+              <br>
+              <a class="nav-link projectsmenu" href="../index.html"><span>Home</span></a><br>
+              <a class="nav-link scrolla" href="../index.html#omena"><span>Projects</span></a><br>
+              <a class="nav-link resumea" href="../resume.html"><span>Resume</span></a><br>
+              <a class="nav-link abouta" href="../about.html"><span>About</span></a>
+            </div>
+        </div>
+
+        <div class="container-item frosted">
+            <div class="title-text">
+                <h1 class="display-1">Develop for Good</h1>
+            </div>
+        </div>
+    </header>
+
+
+    
+    <div class="section-div">
+      <h2 class="display-3">My Roles</h2>
+        <div class="content-text-box">
+            <p>
+                Through Develop for Good's 6 month program, I worked alongside a team of 5 other developers to redesign a website for 
+                Neuro Diverse Living, a nonprofit organization providing housing for autistic individuals with higher assistance needs.
+            </p>
+            <h3>Designer</h3>
+                <ul>
+                    <li>Established a style guide using existing colors and typography on the website</li>
+                    <li>Consulted with the CEO of the organization to recognize their vision and highlight their priority for emphasizing donations</li>
+                    <li>Developed a high fidelity prototype on Figma and underwent multiple rounds of approval</li>
+                </ul>
+            <h3>Developer</h3>
+                <ul>
+                    <li>Translated Figma design into usable product using SASS-powered CSS and Bootstrap-powered HTML</li>
+                    <li>Optimized SEO for website to generate more traffic</li>
+                    <li>Developed a scalable, responsive design and ensured seamless project handover after development period</li>
+                </ul>
+        </div>
+    </div>
+
+    <div class="section-div">
+        <h2 class="display-3">Original Website => Hifi Prototype</h2>
+        <div class="content-text-box">
+            
+            <div class="row imgspacing">
+                <div class="col-8 col-sm-7 col-md-4 align-self-center mx-auto">
+                    <img class="img-fluid" src="../images/ndl/original.png" alt="sm">
+                </div>
+                <div class="col-8 col-sm-7 col-md-4 align-self-center mx-auto">
+                    <img class="img-fluid" src="../images/ndl/prototype.png" alt="sm">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-div">
+        <h2 class="display-3">Final Product</h2>
+        <div class="content-text-box">
+            
+            <div class="row imgspacing">
+                <div class="col-8 col-sm-7 col-md-4 align-self-center mx-auto">
+                    <img class="img-fluid" src="../images/ndl/redesigned 1.png" alt="sm">
+                </div>
+                <div class="col-8 col-sm-7 col-md-4 align-self-center mx-auto">
+                    <img class="img-fluid" src="../images/ndl/redesigned 2.png" alt="sm">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <footer>
+        <p>
+        <br>
+        Designed by Maliha Islam
+        <br>
+        Home page, about, music, and resume background images and self-photo photographed by Maliha Islam
+        <br>
+        Contents of pages written by Maliha Islam
+        <br>
+        Header images and polaroid thumbnails edited by Maliha Islam on Canva
+        <br>
+        </p>
+    </footer>
+
+
+  </body>
+</html>

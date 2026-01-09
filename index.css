@@ -259,10 +259,13 @@
     margin-top: 1em;
     margin-bottom: 1em;
     width: 25vw;
-    height: 65vh;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     background-color: #E9E6EB !important;
     flex-wrap: wrap;
+}
+
+.music-polaroid{
+    height:65vh;
 }
 
 .btn:hover{
